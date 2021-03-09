@@ -1,0 +1,5 @@
+{
+    "solidity.compileUsingRemoteVersion": "v0.5.2+commit.1df8f40c",
+    "eth-abi-interactive.nodeURI": "http://127.0.0.1:7545",
+    "eth-abi-interactive.privateKeysFile": "/Users/alex/.eth-abi-interactive/keys.json"
+}

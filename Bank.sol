@@ -5,7 +5,7 @@ import "./Ownable.sol"
 contract Bank is Ownable {
         
     mapping(address => uint) balance;
-    bool private_paused;
+    bool private _paused;
     
     constructor () internal {
         _paused = false;
@@ -21,7 +21,6 @@ contract Bank is Ownable {
         _;
     }
     
-    
     function pause() public onlyOwner whenNotPaused {
         _paused = true;
     }
@@ -35,7 +34,6 @@ contract Bank is Ownable {
         balances[msg.sender] = 0;
         require(smg.sender.call.valu(amountToWithdraw));
     }
-    
     
     function emergncywithdrawl() public onlyOwner whenPaused{
         //withdrawl to owner
